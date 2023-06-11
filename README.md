@@ -8,6 +8,9 @@ Version: 0.0.1 - 10 Jun 2023
 
 Learning about Langchain
 
+To run formatter:  
+> black .
+
 ## Contributing
 
 If you wish to contribute to this repo, please read the [Contributing document](.github/CONTRIBUTING.md).
