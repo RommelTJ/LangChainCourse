@@ -12,7 +12,7 @@ Rodri is a Spain international and former youth international. He made his debut
 
 if __name__ == "__main__":
     summary_template = """
-        Given the information {information} about a person from whom I want you to create:
+        Given the LinkedIn information {information} about a person from whom I want you to create:
         1. A short summary
         2. Two interesting facts about them
     """
