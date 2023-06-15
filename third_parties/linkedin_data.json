@@ -1,0 +1,301 @@
+{
+   "public_identifier":"rommel-rico-29661363",
+   "profile_pic_url":"None",
+   "background_cover_image_url":"None",
+   "first_name":"Rommel",
+   "last_name":"Rico",
+   "full_name":"Rommel Rico",
+   "follower_count":419,
+   "occupation":"Team Lead, Engineer III at Chatmeter",
+   "headline":"Team Lead, Engineer III",
+   "summary":"Full-Stack Software Engineer with over 6 years of comprehensive Java/Scala development experience. Proven experience collaborating with team members to support institutional goals. Possess broad knowledge of web portals and associated technology stack. Demonstrated experience initiating strategies resulting in significant savings. Excellent communication skills.",
+   "country":"US",
+   "country_full_name":"United States of America",
+   "city":"San Diego",
+   "state":"California",
+   "experiences":[
+      {
+         "starts_at":{
+            "day":1,
+            "month":2,
+            "year":2022
+         },
+         "ends_at":"None",
+         "company":"Chatmeter",
+         "company_linkedin_profile_url":"https://www.linkedin.com/company/chatmeter/",
+         "title":"Team Lead, Engineer III",
+         "description":"As a team lead, I lead a team of 5 engineers to add features and functionality to the Chatmeter platform. My main responsibility is to ensure that the team delivers commitments in the specified timeframes while following best practices and adhering to Chatmeter engineering values.\n\nOther responsibilities include:  \n- Design, develop, automate, and deploy new features and functionality\n- Contribute to sprint planning decisions, retrospectives, daily standups, and code reviews for your team.\n- Communicates team technical decisions via design docs, tech talks, and wiki.\n- Mentors junior engineers via pair programming and code reviews.\n- Unblocks team on technical issues.",
+         "location":"San Diego, California, United States",
+         "logo_url":"https://media.licdn.com/dms/image/C560BAQESpVCx60W2_Q/company-logo_400_400/0/1625174426557?e=1694649600&v=beta&t=DcMYv1PDiejf9rycuou5Vd9BEPCgni1Y_3gONa2SF6w"
+      },
+      {
+         "starts_at":{
+            "day":1,
+            "month":11,
+            "year":2018
+         },
+         "ends_at":"None",
+         "company":"Chatmeter",
+         "company_linkedin_profile_url":"https://www.linkedin.com/company/chatmeter/",
+         "title":"Software Developer",
+         "description":"Full-stack software developer working in the online reputation management space. My primary tech stack is Scala Play Framework for the backend and React for the front-end. I also work on DevOps tasks, such as configuring CI/CD pipelines, configuring Docker/Kubernetes, AWS, and BentoML (Machine Learning framework). I helped launch the Chatmeter mobile app, which is a React Native application.\n\nAs a member of a small but talented engineering team, I've had the pleasure of working on the following Chatmeter features:\n- Analytics Studio: A tool to analyze, visualize, and interpret data within the Chatmeter platform: https://www.chatmeter.com/platform/reporting-and-analytics/\n- Workflow: Chatmeter’s all-in-one tool to automate responding to reviews, maintaining local listings, and managing a company's social media presence. https://www.chatmeter.com/platform/workflow-management/\n- LocationHQ Mobile App: Chatmeter's mobile app that allows you to manage online reviews and listings on the go. https://www.chatmeter.com/platform/mobile-app/\n- And more!",
+         "location":"Greater San Diego Area",
+         "logo_url":"https://media.licdn.com/dms/image/C560BAQESpVCx60W2_Q/company-logo_400_400/0/1625174426557?e=1694649600&v=beta&t=DcMYv1PDiejf9rycuou5Vd9BEPCgni1Y_3gONa2SF6w"
+      },
+      {
+         "starts_at":{
+            "day":1,
+            "month":4,
+            "year":2012
+         },
+         "ends_at":{
+            "day":1,
+            "month":11,
+            "year":2018
+         },
+         "company":"University of San Diego",
+         "company_linkedin_profile_url":"https://www.linkedin.com/school/university-of-san-diego/",
+         "title":"Sr. Software Engineer",
+         "description":"Worked with project teams on innovative solutions that impacted the experience of students, staff, faculty, alumni and others within the USD community. Responsible for analysis, design, implementation, and deployment of solutions in Java, servlet, J2EE and other Java-related technologies that leverage the Luminis, SharePoint portals, Digital document management solutions, or mobile technologies. Pro-actively administered, troubleshooted, and provided technical support for assigned technologies such as the MySanDiego Portal, Banner AppXtender, and  Ellucian Mobile Platform.\n\nAccomplishments\n●\tCreation of JSR-286 compliant portlet solutions that allowed Help Desk to provide better primary support, allowed USD to be more FERPA compliant, and provided data analytics to students.\n●\tImplemented, customized and maintained 3 Android and 3 iOS Mobile apps (MySDMobile, USD Law, Future Torero) that are published and have collectively received thousands of downloads.\n●\tProvided several technology enhancements (Law School Seating Chart, solution for migrating Parent-Student data, Portal Tabs) which provided cost savings and convenience to USD.\n●\tIntroduced and Evangelized modern agile development techniques: Team Wiki, GitHub Enterprise, SCRUM and Kanban.\n●\tProvided timely customer service that improved the reputation of the Portal Team.",
+         "location":"Greater San Diego Area",
+         "logo_url":"https://media.licdn.com/dms/image/C560BAQFUjjR6ZN3wRA/company-logo_400_400/0/1519856338030?e=1694649600&v=beta&t=HLsmMV-8nczVhuGPXb6n0fvbzv9j69tQ_fNS9DuDb_o"
+      },
+      {
+         "starts_at":{
+            "day":1,
+            "month":4,
+            "year":2011
+         },
+         "ends_at":{
+            "day":1,
+            "month":4,
+            "year":2012
+         },
+         "company":"University of San Diego",
+         "company_linkedin_profile_url":"https://www.linkedin.com/school/university-of-san-diego/",
+         "title":"Sr. Programmer Analyst",
+         "description":"Responsible for maintenance, implementation, and deployment of Enterprise solutions such as the MySanDiego Portal, Banner AppXtender, SharePoint Portal, Onity Integra5 Locking System, and Nagios 4 Monitoring System.\n\nAccomplishments\n●\tPrimary System Administrator for 33 Prod and Dev servers with Windows and Linux OSs with less than 1% downtime by pro-actively monitoring and upgrading systems.\n●\tUpgraded Microsoft Sharepoint 2007 to 2010 version on an environment with 6 servers, 32 site collections (public and intranet) and hundreds of sites.",
+         "location":"Greater San Diego Area",
+         "logo_url":"https://media.licdn.com/dms/image/C560BAQFUjjR6ZN3wRA/company-logo_400_400/0/1519856338030?e=1694649600&v=beta&t=HLsmMV-8nczVhuGPXb6n0fvbzv9j69tQ_fNS9DuDb_o"
+      },
+      {
+         "starts_at":{
+            "day":1,
+            "month":1,
+            "year":2011
+         },
+         "ends_at":{
+            "day":1,
+            "month":3,
+            "year":2011
+         },
+         "company":"Pfizer",
+         "company_linkedin_profile_url":"https://www.linkedin.com/company/pfizer/",
+         "title":"Pfizer / University of San Diego Rotational Fellow",
+         "description":"Non-paid eight week fellowship with the Pfizer La Jolla Development Business Technology group. \n\nAccomplishments\n●\tDeveloped an inventory system from scratch in HTML, jQuery and Python that allowed for easier tracking of Lab maintenance and integrated into existing solutions.",
+         "location":"None",
+         "logo_url":"https://media.licdn.com/dms/image/D560BAQHTjAHnezSnYw/company-logo_400_400/0/1685635496125?e=1694649600&v=beta&t=7AuThCZaPsng5YFqUhT_FMsZmZRpsgBg1ybCtn6Tdu4"
+      }
+   ],
+   "education":[
+      {
+         "starts_at":{
+            "day":1,
+            "month":1,
+            "year":2006
+         },
+         "ends_at":{
+            "day":1,
+            "month":1,
+            "year":2010
+         },
+         "field_of_study":"Computer Science",
+         "degree_name":"Bachelor of Arts",
+         "school":"University of San Diego",
+         "school_linkedin_profile_url":"None",
+         "description":"None",
+         "logo_url":"https://media.licdn.com/dms/image/C560BAQFUjjR6ZN3wRA/company-logo_400_400/0/1519856338030?e=1694649600&v=beta&t=HLsmMV-8nczVhuGPXb6n0fvbzv9j69tQ_fNS9DuDb_o",
+         "grade":"None",
+         "activities_and_societies":"None"
+      }
+   ],
+   "languages":[
+      "German",
+      "Spanish"
+   ],
+   "accomplishment_organisations":[
+      
+   ],
+   "accomplishment_publications":[
+      
+   ],
+   "accomplishment_honors_awards":[
+      
+   ],
+   "accomplishment_patents":[
+      
+   ],
+   "accomplishment_courses":[
+      {
+         "name":"Computer Science, BA degree",
+         "number":"None"
+      }
+   ],
+   "accomplishment_projects":[
+      {
+         "starts_at":{
+            "day":1,
+            "month":9,
+            "year":2012
+         },
+         "ends_at":"None",
+         "title":"GitHub Profile",
+         "description":"An online reposity for some of my coding projects.",
+         "url":"None"
+      },
+      {
+         "starts_at":"None",
+         "ends_at":"None",
+         "title":"Ellucian Mobile",
+         "description":"Delivered 3 high-demand Ellucian mobile apps that include multimedia messaging, Google Analytics, single sign-on access to external mobile web applications and SIS integration.",
+         "url":"None"
+      }
+   ],
+   "accomplishment_test_scores":[
+      
+   ],
+   "volunteer_work":[
+      
+   ],
+   "certifications":[
+      
+   ],
+   "connections":"None",
+   "people_also_viewed":[
+      {
+         "link":"https://www.linkedin.com/in/louiscodes",
+         "name":"Louis Johnson",
+         "summary":"None",
+         "location":"None"
+      },
+      {
+         "link":"https://www.linkedin.com/in/ryanglovinsky",
+         "name":"Ryan Glovinsky",
+         "summary":"None",
+         "location":"None"
+      },
+      {
+         "link":"https://www.linkedin.com/in/shane-o-neill-45b685223",
+         "name":"Shane O'Neill",
+         "summary":"None",
+         "location":"None"
+      },
+      {
+         "link":"https://www.linkedin.com/in/tommykebschull",
+         "name":"Tommy Kebschull",
+         "summary":"None",
+         "location":"None"
+      },
+      {
+         "link":"https://www.linkedin.com/in/quincy-josephine-compton-b14ab210b",
+         "name":"Quincy Josephine Compton",
+         "summary":"None",
+         "location":"None"
+      },
+      {
+         "link":"https://www.linkedin.com/in/tiger-yuchi",
+         "name":"Tiger Yuchi",
+         "summary":"None",
+         "location":"None"
+      },
+      {
+         "link":"https://www.linkedin.com/in/adrian-lyjak-2bb87935",
+         "name":"Adrian Lyjak",
+         "summary":"None",
+         "location":"None"
+      },
+      {
+         "link":"https://www.linkedin.com/in/courtneyolson92",
+         "name":"Courtney Battles (Olson)",
+         "summary":"None",
+         "location":"None"
+      },
+      {
+         "link":"https://www.linkedin.com/in/kathleentitano",
+         "name":"Kathleen Titano",
+         "summary":"None",
+         "location":"None"
+      },
+      {
+         "link":"https://www.linkedin.com/in/brady-keller-098ba861",
+         "name":"Brady Keller",
+         "summary":"None",
+         "location":"None"
+      }
+   ],
+   "recommendations":[
+      
+   ],
+   "activities":[
+      
+   ],
+   "similarly_named_profiles":[
+      
+   ],
+   "articles":[
+      
+   ],
+   "groups":[
+      
+   ],
+   "phone_numbers":[
+      
+   ],
+   "social_networking_services":[
+      
+   ],
+   "skills":[
+      "HTML",
+      "Python",
+      "SharePoint",
+      "Java",
+      "MySQL",
+      "PL/SQL",
+      "jQuery",
+      "PHP",
+      "XML",
+      "CSS",
+      "Unix",
+      "Luminis",
+      "JavaScript",
+      "AJAX",
+      "Onity",
+      "German",
+      "Spanish",
+      "BDMS",
+      "Django",
+      "PostgreSQL"
+   ],
+   "inferred_salary":{
+      "min":"None",
+      "max":"None"
+   },
+   "gender":"None",
+   "birth_date":"None",
+   "industry":"None",
+   "extra":{
+      "github_profile_id":"None",
+      "twitter_profile_id":"None",
+      "facebook_profile_id":"None"
+   },
+   "interests":[
+      
+   ],
+   "personal_emails":[
+      "me@rommelrico.com",
+      "rommeltj@gmail.com"
+   ],
+   "personal_numbers":[
+      
+   ]
+}
