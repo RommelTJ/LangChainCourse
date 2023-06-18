@@ -23,7 +23,7 @@ if __name__ == "__main__":
     )
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
     chain = LLMChain(llm=llm, prompt=summary_prompt_template)
-    with open('./third_parties/linkedin_data.json', 'r') as f:
+    with open("./third_parties/linkedin_data.json", "r") as f:
         data = json.load(f)
 
     # linkedin_data = scrape_linkedin_profile(
