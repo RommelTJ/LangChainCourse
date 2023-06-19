@@ -1,16 +1,18 @@
 import os
 import logging
-
 import tweepy
+from dotenv import load_dotenv
+
+load_dotenv()
 
 logger = logging.getLogger("twitter")
 
 twitter_client = tweepy.Client(
-    bearer_token=os.environ["TWITTER_BEARER_TOKEN"],
-    consumer_key=os.environ["TWITTER_API_KEY"],
-    consumer_secret=os.environ["TWITTER_API_SECRET"],
-    access_token=os.environ["TWITTER_ACCESS_TOKEN"],
-    access_token_secret=os.environ["TWITTER_ACCESS_SECRET"],
+    bearer_token=os.getenv("TWITTER_BEARER_TOKEN"),
+    consumer_key=os.getenv("TWITTER_API_KEY"),
+    consumer_secret=os.getenv("TWITTER_API_SECRET"),
+    access_token=os.getenv("TWITTER_ACCESS_TOKEN"),
+    access_token_secret=os.getenv("TWITTER_ACCESS_SECRET"),
 )
 
 
@@ -32,7 +34,3 @@ def scrape_user_tweets(username, num_tweets=5):
         tweet_list.append(tweet_dict)
 
     return tweet_list
-
-
-if __name__ == "__main__":
-    print(scrape_user_tweets(username="hwchase17"))

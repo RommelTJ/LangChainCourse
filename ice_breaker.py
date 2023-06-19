@@ -9,14 +9,15 @@ from agents.linkedin_lookup_agent import lookup
 
 name = "Rommel Rico San Diego"
 if __name__ == "__main__":
-    linkedin_profile_url = lookup(name=name)
-    print(linkedin_profile_url)
+    # linkedin_profile_url = lookup(name=name)
     with open("./third_parties/linkedin_data.json", "r") as f:
-        data = json.load(f)
+        linkedin_data = json.load(f)
     # linkedin_data = scrape_linkedin_profile(linkedin_profile_url=linkedin_profile_url)
-    linkedin_data = data
 
-    tweets = scrape_user_tweets(username=name)
+    with open("./third_parties/twitter_data.json", "r") as f:
+        twitter_data = json.load(f)
+    # twitter_data = scrape_user_tweets(username=name)
+    print(twitter_data)
 
     summary_template = """
         Given the LinkedIn information {information} about a person from whom I want you to create:
