@@ -1,22 +1,28 @@
+import os
+from typing import Tuple
+
 from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
 
-from output_parsers import person_intel_parser
+from output_parsers import PersonIntel, person_intel_parser
 from third_parties.linkedin import scrape_linkedin_profile
 from third_parties.twitter import scrape_user_tweets
 import json
 from agents.linkedin_lookup_agent import linkedin_lookup_agent
 from agents.twitter_lookup_agent import twitter_lookup_agent
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
-def ice_break(name: str) -> str:
-    linkedin_profile_url = linkedin_lookup_agent(name=name)
+def ice_break(name: str) -> Tuple[PersonIntel, str]:
+    # linkedin_profile_url = linkedin_lookup_agent(name=name)
     with open("./third_parties/linkedin_data.json", "r") as f:
         linkedin_data = json.load(f)
     # linkedin_data = scrape_linkedin_profile(linkedin_profile_url=linkedin_profile_url)
 
-    twitter_username = twitter_lookup_agent(name=name)
+    # twitter_username = twitter_lookup_agent(name=name)
     with open("./third_parties/twitter_data.json", "r") as f:
         twitter_data = json.load(f)
     # twitter_data = scrape_user_tweets(username=twitter_username)
@@ -38,10 +44,10 @@ def ice_break(name: str) -> str:
             "format_instructions": person_intel_parser.get_format_instructions()
         },
     )
-    llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
+    llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo", openai_api_key=os.getenv("OPENAI_API_KEY"))
     chain = LLMChain(llm=llm, prompt=summary_prompt_template)
-
-    return chain.run(linkedin_info=linkedin_data, twitter_info=twitter_data)
+    result = chain.run(linkedin_info=linkedin_data, twitter_info=twitter_data)
+    return person_intel_parser.parse(result), linkedin_data.get("profile_pic_url")
 
 
 if __name__ == "__main__":
