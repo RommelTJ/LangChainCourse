@@ -4,30 +4,32 @@ from langchain.chains import LLMChain
 from third_parties.linkedin import scrape_linkedin_profile
 from third_parties.twitter import scrape_user_tweets
 import json
-from agents.linkedin_lookup_agent import lookup
+from agents.linkedin_lookup_agent import linkedin_lookup_agent
+from agents.twitter_lookup_agent import twitter_lookup_agent
 
 
-name = "Rommel Rico San Diego"
+name = "Barack Obama"
 if __name__ == "__main__":
-    # linkedin_profile_url = lookup(name=name)
+    linkedin_profile_url = linkedin_lookup_agent(name=name)
     with open("./third_parties/linkedin_data.json", "r") as f:
         linkedin_data = json.load(f)
     # linkedin_data = scrape_linkedin_profile(linkedin_profile_url=linkedin_profile_url)
 
+    twitter_username = twitter_lookup_agent(name=name)
     with open("./third_parties/twitter_data.json", "r") as f:
         twitter_data = json.load(f)
     # twitter_data = scrape_user_tweets(username=name)
-    print(twitter_data)
 
     summary_template = """
-        Given the LinkedIn information {information} about a person from whom I want you to create:
+        Given the LinkedIn information {linkedin_info} and Twitter information {twitter_info} about a person from whom 
+        I want you to create:
         1. A short summary
         2. Two interesting facts about them
     """
     summary_prompt_template = PromptTemplate(
-        input_variables=["information"], template=summary_template
+        input_variables=["linkedin_info", "twitter_info"], template=summary_template
     )
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
     chain = LLMChain(llm=llm, prompt=summary_prompt_template)
 
-    print(chain.run(information=linkedin_data))
+    print(chain.run(linkedin_info=linkedin_data, twitter_info=twitter_data))
