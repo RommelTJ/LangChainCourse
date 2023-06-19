@@ -8,8 +8,7 @@ from agents.linkedin_lookup_agent import linkedin_lookup_agent
 from agents.twitter_lookup_agent import twitter_lookup_agent
 
 
-name = "Barack Obama"
-if __name__ == "__main__":
+def ice_break(name: str) -> str:
     linkedin_profile_url = linkedin_lookup_agent(name=name)
     with open("./third_parties/linkedin_data.json", "r") as f:
         linkedin_data = json.load(f)
@@ -18,7 +17,7 @@ if __name__ == "__main__":
     twitter_username = twitter_lookup_agent(name=name)
     with open("./third_parties/twitter_data.json", "r") as f:
         twitter_data = json.load(f)
-    # twitter_data = scrape_user_tweets(username=name)
+    # twitter_data = scrape_user_tweets(username=twitter_username)
 
     summary_template = """
         Given the LinkedIn information {linkedin_info} and Twitter information {twitter_info} about a person from whom 
@@ -32,4 +31,9 @@ if __name__ == "__main__":
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
     chain = LLMChain(llm=llm, prompt=summary_prompt_template)
 
-    print(chain.run(linkedin_info=linkedin_data, twitter_info=twitter_data))
+    return chain.run(linkedin_info=linkedin_data, twitter_info=twitter_data)
+
+
+if __name__ == "__main__":
+    name = "Barack Obama"
+    output = ice_break(name)
