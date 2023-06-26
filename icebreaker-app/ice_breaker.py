@@ -44,7 +44,11 @@ def ice_break(name: str) -> Tuple[PersonIntel, str]:
             "format_instructions": person_intel_parser.get_format_instructions()
         },
     )
-    llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo", openai_api_key=os.getenv("OPENAI_API_KEY"))
+    llm = ChatOpenAI(
+        temperature=0,
+        model_name="gpt-3.5-turbo",
+        openai_api_key=os.getenv("OPENAI_API_KEY"),
+    )
     chain = LLMChain(llm=llm, prompt=summary_prompt_template)
     result = chain.run(linkedin_info=linkedin_data, twitter_info=twitter_data)
     return person_intel_parser.parse(result), linkedin_data.get("profile_pic_url")
