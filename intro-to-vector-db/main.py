@@ -8,10 +8,11 @@ from langchain.vectorstores import Pinecone
 from langchain import VectorDBQA, OpenAI
 import pinecone
 
-pinecone.init(
-    api_key=os.getenv("PINECONE_API_KEY"), environment=os.getenv("PINECONE_ENVIRONMENT")
-)
 load_dotenv()
+
+api_key = os.getenv("PINECONE_API_KEY")
+environment = os.getenv("PINECONE_ENVIRONMENT")
+pinecone.init(api_key=api_key, environment=environment)
 
 if __name__ == "__main__":
     loader = TextLoader(
@@ -31,7 +32,7 @@ if __name__ == "__main__":
         llm=OpenAI(),
         chain_type="stuff",
         vectorstore=docsearch,
-        return_source_documents=True
+        return_source_documents=True,
     )
     query = "What is a vector DB? Give me a 15 word answer for a beginner"
     result = qa({"query": query})
