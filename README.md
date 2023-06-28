@@ -2,7 +2,7 @@
 
 langchain-icebreaker
 
-Version: 0.0.3 - 19 Jun 2023
+Version: 0.0.4 - 27 Jun 2023
 
 ## Description
 
