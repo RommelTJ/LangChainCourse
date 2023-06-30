@@ -1,6 +1,6 @@
-# langchain-icebreaker
+# LangChainCourse
 
-langchain-icebreaker
+LangChainCourse
 
 Version: 0.0.4 - 27 Jun 2023
 
