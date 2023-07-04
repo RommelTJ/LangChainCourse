@@ -2,7 +2,7 @@
 
 LangChainCourse
 
-Version: 0.0.5 - 2 Jul 2023
+Version: 0.0.6 - 4 Jul 2023
 
 ## Description
 
