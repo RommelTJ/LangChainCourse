@@ -25,3 +25,9 @@
   * Output Indicator
     * It signals the AI model that we expect a response now.
 
+## Zero-shot Prompting
+
+* A type of prompt in which the model generates an output that it has not been explicitly trained on.
+* It relies on the model's ability to understand and interpret natural language.
+* These are prompts without examples.
+* Limitations: Accuracy. The scope might be limited and we have less control.
