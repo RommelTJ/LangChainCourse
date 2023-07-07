@@ -31,3 +31,37 @@
 * It relies on the model's ability to understand and interpret natural language.
 * These are prompts without examples.
 * Limitations: Accuracy. The scope might be limited and we have less control.
+
+## Few-shot prompting
+
+* Model is given a few examples of the result you want
+* One-shot prompting
+  * Give it 1 example
+* Few-shot prompting
+  * Give it 2+ examples
+* Examples
+  * https://www.bluewillow.ai/ prompts
+    * Zero-shot
+      * Write an image description with adjectives and nouns of a Yorkshire dog running in a winter landscape in Brazil
+    * One-shot
+      * Write a compressed perfect image description with adjectives and nouns of a Yorkshire dog running in a winter 
+      landscape in Brazil:
+      Blue dog, shimmering, snow, trees, frosted, ice, movements
+
+      Write a compressed perfect image description with adjectives and nouns of a Yorkshire dog running in a winter
+      landscape in Brazil:
+    * Few-shot
+      * Write a compressed perfect image description with adjectives and nouns of a Yorkshire dog running in a winter
+        landscape in Brazil:
+        Blue dog, shimmering, snow, trees, frosted, ice
+
+        Write a compressed perfect image description with adjectives and nouns of a Yorkshire dog running in a winter
+        landscape in Brazil:
+        Red dog, Crying, snow, bees, frosted, ice
+
+        Write a compressed perfect image description with adjectives and nouns of a Yorkshire dog running in a winter
+        landscape in Brazil:
+        Green dog, crying, snow, bees, frosted, ice
+
+        Now you try writing the image description while generating your own nouns and adjectives. Plug them into a full
+        description sentence.
