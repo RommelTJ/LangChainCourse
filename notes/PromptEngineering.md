@@ -65,3 +65,12 @@
 
         Now you try writing the image description while generating your own nouns and adjectives. Plug them into a full
         description sentence.
+
+## Chain of Thought Prompting
+
+* Multi-step reasoning and common sense reasoning problems are hard for LLMs.
+* Chain of Thought (COT) Prompting aims to decompose problems into multi-step problems to solve these problems.
+* Guide the model to solve the problem like a human would
+* Chain of Thought Prompting Paper
+  * https://arxiv.org/pdf/2201.11903v1.pdf
+* Tell it to "Explain step by step" in Zero-shot Prompting or provide it with examples in Few-shot Prompts.
