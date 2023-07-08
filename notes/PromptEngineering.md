@@ -74,3 +74,10 @@
 * Chain of Thought Prompting Paper
   * https://arxiv.org/pdf/2201.11903v1.pdf
 * Tell it to "Explain step by step" in Zero-shot Prompting or provide it with examples in Few-shot Prompts.
+
+## ReAct
+
+* A paradigm that integrates language models with reasoning and acting capabilities
+* This allows for dynamic reasoning and interaction with external environments to perform complex tasks
+* Chain of Thoughts (COT) + Actions
+* This is the basis of the idea behind LangChain
