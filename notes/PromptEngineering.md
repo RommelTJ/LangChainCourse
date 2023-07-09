@@ -81,3 +81,13 @@
 * This allows for dynamic reasoning and interaction with external environments to perform complex tasks
 * Chain of Thoughts (COT) + Actions
 * This is the basis of the idea behind LangChain
+
+## Prompt Engineering Quick Tips
+
+* Writing a good prompt
+  * Context
+    * The more context you provide to a prompt, the better the response
+  * Clear, non-ambiguous task
+    * Concise, clear tasks
+  * Iterations
+    * Repeat and refine the prompt
